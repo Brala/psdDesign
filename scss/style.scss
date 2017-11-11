@@ -1,18 +1,82 @@
 @import "settings";
-
-body{
-    background-color: $color-bg;
+body,
+ul,
+li,
+p {
     margin: 0;
     padding: 0;
 }
-nav{
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: $color-bg;
+    color: $color;
+}
+
+nav {
     background-color: $nav-color-bg;
     position: absolute;
-    width: 100px;
+    width: 200px;
     bottom: 0;
     top: 0;
 }
-menu{
+
+.top {
     background-color: $top-color-bg;
-    margin: 0;
+    margin-left: 200px;
+    height: 40px;
+    >.logo {
+        float: left;
+    }
+    >.login {
+        float: right;
+    }
+}
+
+.menu {
+    color: $menu-color;
+    >ul {
+        color: $menu-ul-color;
+        >li {}
+    }
+}
+
+.menu-bar {
+    p {
+        float: left;
+    }
+    .fa {
+        float: right;
+    }
+    &:after{
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        height: 0;
+    }
+}
+
+.icons-menu {
+    text-align: center;
+    &:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        height: 0;
+    }
+    ul li {
+        float: left;
+        width: 50px;
+    }
+}
+
+
+.hamburger {
+    margin-left: 200px;
+    color: $hamburger-color;
 }
