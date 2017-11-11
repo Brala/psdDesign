@@ -1,0 +1,18 @@
+@import "settings";
+
+body{
+    background-color: $color-bg;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: $nav-color-bg;
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+    top: 0;
+}
+menu{
+    background-color: $top-color-bg;
+    margin: 0;
+}
