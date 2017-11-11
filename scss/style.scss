@@ -19,14 +19,14 @@ body {
 nav {
     background-color: $nav-color-bg;
     position: absolute;
-    width: 200px;
+    width: $nav-size;
     bottom: 0;
     top: 0;
 }
 
 .top {
     background-color: $top-color-bg;
-    margin-left: 200px;
+    margin-left: $nav-size;
     height: 40px;
     >.logo {
         float: left;
@@ -45,6 +45,9 @@ nav {
 }
 
 .menu-bar {
+    padding: 10px;
+    font-size: 17px;
+    border-bottom: 1px solid $menu-bar-border-color;
     p {
         float: left;
     }
@@ -71,12 +74,21 @@ nav {
     }
     ul li {
         float: left;
-        width: 50px;
+        width: $nav-size/4;
+        height: $nav-size/4;
+        p{
+            font-size: 11px;
+            color: $menu-icons-color;
+        }
+        i{
+            font-size:25px;
+            color: white;
+        }
     }
 }
 
 
 .hamburger {
-    margin-left: 200px;
+    margin-left: $nav-size;
     color: $hamburger-color;
 }
