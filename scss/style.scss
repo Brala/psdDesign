@@ -2,7 +2,8 @@
 body,
 ul,
 li,
-p {
+p,
+i {
     margin: 0;
     padding: 0;
 }
@@ -13,6 +14,7 @@ li {
 
 body {
     background-color: $color-bg;
+    font-family: Helvetica, Arial, sans-serif;
     color: $color;
 }
 
@@ -20,7 +22,7 @@ nav {
     background-color: $nav-color-bg;
     position: absolute;
     width: $nav-size;
-    bottom: 0;
+    min-height: 100vh;
     top: 0;
 }
 
@@ -28,25 +30,51 @@ nav {
     background-color: $top-color-bg;
     margin-left: $nav-size;
     height: 40px;
-    >.logo {
+    .logo {
         float: left;
+        margin-top: 11px;
+        margin-left: 72px;
+        font-size: 18px;
     }
-    >.login {
+    .login {
         float: right;
+        margin-top: 13px;
+        margin-right: 72px;
+        font-size: 14px;
+        >* {
+            float: left;
+        }
+        p {
+            margin-left: 13px;
+        }
     }
 }
 
 .menu {
     color: $menu-color;
-    >ul {
+    .fa-angle-up,
+    .fa-angle-down {
+        color: $menu-bar-arrow-color;
+        font-size: 18px;
+    }
+    ul {
         color: $menu-ul-color;
-        >li {}
+        .list {
+            font-size: 16px;
+            margin: 11px;
+            margin-left: 21px;
+        }
+        li {
+            &:hover {
+                color: $color;
+            }
+        }
     }
 }
 
 .menu-bar {
     padding: 10px;
-    font-size: 17px;
+    font-size: 18px;
     border-bottom: 1px solid $menu-bar-border-color;
     p {
         float: left;
@@ -54,7 +82,7 @@ nav {
     .fa {
         float: right;
     }
-    &:after{
+    &:after {
         content: ".";
         display: block;
         clear: both;
@@ -76,19 +104,29 @@ nav {
         float: left;
         width: $nav-size/4;
         height: $nav-size/4;
-        p{
+        &:hover {
+            background-color: $menu-icons-hover-color-bg;
+            p,
+            i {
+                color: $nav-color-bg;
+            }
+        }
+        p {
             font-size: 11px;
             color: $menu-icons-color;
         }
-        i{
-            font-size:25px;
-            color: white;
+        i {
+            margin-top: 18px;
+            margin-bottom: 6px;
+            font-size: 25px;
+            color: $color;
         }
     }
 }
 
-
 .hamburger {
-    margin-left: $nav-size;
+    margin-left: $nav-size + 20px;
+    margin-top: 20px;
     color: $hamburger-color;
+    font-size: 23px;
 }
