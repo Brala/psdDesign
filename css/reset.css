@@ -1,0 +1,15 @@
+body,
+ul,
+li,
+p,
+i {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+button {
+  border: none; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJlc2V0LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7O0VBS0ksVUFBUztFQUNULFdBQVUsRUFDYjs7QUFDRDtFQUNJLGlCQUFnQixFQUNuQjs7QUFDRDtFQUNJLGFBQVksRUFDZiIsImZpbGUiOiJyZXNldC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJib2R5LFxyXG51bCxcclxubGksXHJcbnAsXHJcbmkge1xyXG4gICAgbWFyZ2luOiAwO1xyXG4gICAgcGFkZGluZzogMDtcclxufVxyXG5saSB7XHJcbiAgICBsaXN0LXN0eWxlOiBub25lO1xyXG59XHJcbmJ1dHRvbntcclxuICAgIGJvcmRlcjogbm9uZTtcclxufSJdfQ== */
