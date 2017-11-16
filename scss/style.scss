@@ -179,14 +179,14 @@ nav {
         background-color: $color-bg;
         font-family: Verdana, sans-serif;
     }
-    .buttons{
+    .btns{
         width: auto;
         background-color: #808080;
         border-radius: 0 0 5px 5px;
         .reverse-order{
             float: right;
             margin: 20px;
-            .button{
+            .btn {
                 float: left;
                 width: 125px;
                 text-align: center;
@@ -194,15 +194,15 @@ nav {
                 padding-top: 13px;
                 padding-bottom: 11px;
                 font-weight: bold;
+                &__cancel{
+                    background-color: #b3b3b3;
+                    margin-right: 15px;
+                }
+                &__add{
+                    background-color: $color-bg;
+                    color: $add-butt-color;
+                }   
             }
-            .cancel{
-                background-color: #b3b3b3;
-                margin-right: 15px;
-            }
-            .add{
-                background-color: $color-bg;
-                color: $add-butt-color;
-            }   
         }
         &:after {
             content: ".";
