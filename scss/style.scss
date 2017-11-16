@@ -52,20 +52,18 @@ nav {
     }
     ul {
         color: $menu-ul-color;
-        .list {
-            font-size: 16px;
-            margin: 11px;
-            margin-left: 21px;
-        }
-        li {
-            &:hover {
-                color: $color;
-            }
-        }
     }
     &--hidden ul{
         display: none;
     }
+    &__line-list {
+        font-size: 16px;
+        margin: 11px;
+        margin-left: 21px;
+        &:hover {
+                color: $color;
+            }
+        }
 }
 
 .menu-bar {
